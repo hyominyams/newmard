@@ -13,17 +13,17 @@
   - Footer(크레딧/링크 placeholder)
 
 ## 2) 기술 스택
-- React 18 + Vite + TailwindCSS
+- React 18 + Next.js + TailwindCSS
 - ESM 프로젝트 (`package.json`의 `"type": "module"`)
 
 ## 3) 로컬 실행/빌드
 - Install: `npm install`
 - Dev: `npm run dev`
 - Build: `npm run build`
-- Preview: `npm run preview`
+- Start: `npm run start`
 
 ## 4) 폴더/파일 구조 (핵심)
-- 앱 엔트리: `index.html`, `src/main.jsx`
+- 앱 엔트리: `src/app/layout.tsx`, `src/app/page.jsx`
 - 페이지 루트(상태/조합): `src/App.jsx`
 - 컴포넌트:
   - `src/components/Hero.jsx`, `src/components/WorldMap.jsx`
@@ -40,7 +40,7 @@
 - 소스 오브 트루스: `src/data/cities.js`
 - 각 도시 객체의 `image` 필드가 카드에 표시되는 이미지의 1차 소스입니다.
 
-### 로컬 이미지 사용 규칙 (Vite)
+### 로컬 이미지 사용 규칙 (Next.js)
 - 정적 파일은 `public/` 아래에 두고 **절대경로**로 참조합니다.
   - 예) 파일: `public/images/city/bangkok.jpg`
   - 예) 코드: `image: "/images/city/bangkok.jpg"` (⚠ `./public/...` 금지)
@@ -60,9 +60,8 @@
 - 접근성 유지:
   - 버튼/다이얼로그/툴바 등 ARIA와 키보드 동작 유지
   - `prefers-reduced-motion` 사용자를 고려(과한 애니메이션 금지)
-- 데이터/자산 경로가 Vite 규칙(`public/` → `/...`)을 따르는지 항상 확인합니다.
+- 데이터/자산 경로가 Next.js 규칙(`public/` → `/...`)을 따르는지 항상 확인합니다.
 
 ## 7) 검증(최소)
 - 변경 후 최소 `npm run build`로 컴파일/번들 에러 확인
 - 이미지 변경 시 실제 경로(`/images/...`) 로드 확인
-

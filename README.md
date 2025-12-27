@@ -1,12 +1,12 @@
 # Newmard
 
-React + Tailwind (Vite) MVP for the Newmard PRD.
+Next.js + Tailwind MVP for the Newmard PRD.
 
-## Run (React)
+## Run (Next.js)
 - Install deps: `npm install`
 - Dev server: `npm run dev`
 - Build: `npm run build`
-- Preview: `npm run preview`
+- Prod server: `npm run start`
 
 ## Component Structure
 - `src/components/Hero.jsx` + `src/components/WorldMap.jsx`

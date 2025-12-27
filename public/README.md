@@ -1,6 +1,6 @@
 # public/
 
-Vite serves files in `public/` at the site root.
+Next.js serves files in `public/` at the site root.
 
 Example:
 - Put an image at `public/images/bangkok.jpg`
