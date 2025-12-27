@@ -194,7 +194,7 @@ export default function Hero({ onExplore }) {
         ))}
       </Floating>
 
-      <header className="relative z-10 mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-6 sm:px-6 lg:px-8">
+      <header className="absolute left-0 top-0 z-10 flex items-center px-4 py-6 sm:px-6 lg:px-8">
         <a
           href="#top"
           className="inline-flex items-center gap-2 rounded-xl px-2 py-1 text-lg font-extrabold tracking-tight focus:outline-none focus:ring-4 focus:ring-brand-light/40"
